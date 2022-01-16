@@ -60,29 +60,41 @@ h2 + p {
   flex-direction: column;
 }
 
-/* =======================
-        AD SECTION
-========================== */
-
 .ad-part {
   display: flex;
   flex-direction: column;
   background-color: #404040;
   background-image: url(images/dark-ribs.jpg);
+  background-position: center;
+  background-size: cover;
   padding: 0 0.5em 2em;
-  /* height: 50vh; */
 }
-
-/* =======================
-        FORM SECTION
-========================== */
 
 .form-part {
   padding: 2em 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 570px) {
   .container {
     flex-direction: row;
+    height: 100vh;
+  }
+
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .ad-part,
+  .form-part {
+    width: 50%;
   }
 }
