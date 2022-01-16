@@ -6,15 +6,11 @@ body {
   color: #404040;
 }
 
-h1,
-h2 {
-  margin: 0;
-}
-
 h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: white;
+  margin: 2em 0;
 }
 
 h1 + p {
@@ -22,27 +18,36 @@ h1 + p {
   font-weight: 900;
   font-size: 1.3125rem;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.3125rem;
+  margin: 0;
 }
 
 h2 + p {
   color: #f18119;
   font-weight: 900;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .top-text {
   align-self: center;
   order: -1;
   margin: 0;
-  border-top: 3px solid orange;
+  border-top: 7px solid;
   color: #f18119;
+  /* border-color: linear-gradient(
+    90deg,
+    rgba(255, 165, 29, 1) 0%,
+    rgba(255, 113, 59, 1) 100%
+  ); */
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  padding-top: 0.5em;
 }
 
 .top-text,
@@ -62,16 +67,18 @@ h2 + p {
 .ad-part {
   display: flex;
   flex-direction: column;
-  text-shadow: 0px 0px 20px #aaaaaa;
   background-color: #404040;
   background-image: url(images/dark-ribs.jpg);
-  /* background: no-repeat center center fixed; */
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
-  background-size: cover;
-  padding: 0 0.25em 1em;
+  padding: 0 0.5em 2em;
   /* height: 50vh; */
+}
+
+/* =======================
+        FORM SECTION
+========================== */
+
+.form-part {
+  padding: 2em 1em;
 }
 
 @media (min-width: 600px) {
