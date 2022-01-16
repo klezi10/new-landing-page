@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -77,7 +81,7 @@ h2 + p {
 @media (min-width: 570px) {
   .container {
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   body {
