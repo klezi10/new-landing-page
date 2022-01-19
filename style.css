@@ -80,6 +80,13 @@ h2 + p {
   padding: 2em 1em;
 }
 
+.ad-part > *,
+.form-part > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 570px) {
   .container {
     flex-direction: row;
