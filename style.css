@@ -117,8 +117,14 @@ button {
 }
 
 .btn {
-  background-image: linear-gradient(to right, #ffa51d, #ff713b);
+  background: linear-gradient(to right, #ffa51d, #ff713b);
   color: white;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 570px) {
