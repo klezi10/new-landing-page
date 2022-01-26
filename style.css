@@ -43,11 +43,7 @@ h2 + p {
   margin: 0;
   border-top: 7px solid;
   color: #f18119;
-  /* border-color: linear-gradient(
-    90deg,
-    rgba(255, 165, 29, 1) 0%,
-    rgba(255, 113, 59, 1) 100%
-  ); */
+  border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -123,7 +119,8 @@ button {
   transition: transform 250ms;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   transform: scale(1.1);
 }
 
