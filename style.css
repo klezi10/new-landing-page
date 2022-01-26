@@ -87,6 +87,40 @@ h2 + p {
   margin-right: auto;
 }
 
+.form {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+button {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+
+button {
+  padding: 1em 1.5em;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn {
+  background-image: linear-gradient(to right, #ffa51d, #ff713b);
+  color: white;
+}
+
 @media (min-width: 570px) {
   .container {
     flex-direction: row;
@@ -116,10 +150,5 @@ h2 + p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  form {
-    width: 200px;
-    margin: 0 auto;
   }
 }
