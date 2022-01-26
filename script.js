@@ -7,15 +7,15 @@ emailCollector.addEventListener('submit', function (event) {
 
   const userEmail = myFormData.get('emailAddress');
 
-  const updatedHTML = `
+  const message = `
   <h2>Congratulations, ${userName}!</h2>
         <p>
-          You're going make some amazing BBQ! 
+          You will learn how to make some amazing BBQ! 
         </p>
         <p class="fine-print">
           The weekly tips will be sent to your email address ${userEmail}.
         </p>
   `;
   const mainContent = document.getElementById('main-content');
-  mainContent.innerHTML = updatedHTML;
+  mainContent.innerHTML = message;
 });
