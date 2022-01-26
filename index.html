@@ -22,7 +22,7 @@
         <p>Join us for this live webinar</p>
         <p class="top-text">mouthwaterlingly delicious</p>
       </div>
-      <div class="form-part">
+      <div id="main-content" class="form-part">
         <h2>Become a BBQ master!</h2>
         <p>register today</p>
         <p>
@@ -31,9 +31,19 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
-        <form class="form" action="#" method="post">
-          <input type="name" required placeholder="first name" />
-          <input type="email" required placeholder="email" />
+        <form id="email-collector" class="form" action="#" method="post">
+          <input
+            name="firstName"
+            type="name"
+            required
+            placeholder="first name"
+          />
+          <input
+            name="emailAddress"
+            type="email"
+            required
+            placeholder="email"
+          />
           <button class="btn" type="submit">Register</button>
         </form>
         <p class="fine-print">
@@ -41,5 +51,6 @@
         </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
